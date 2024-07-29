@@ -1,1 +1,51 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of the go coverage tool
+*.out
+
+# Test binaries
+*.test
+
+# Temporary files
+*.log
+*.tmp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency directories
+vendor/
+
+# OS-specific files
 .DS_Store
+Thumbs.db
+
+# Node.js dependencies (if you have any Node.js tools)
+node_modules/
+
+# Log files
+*.log
+
+# Build directory
+build/
+
+# Coverage files
+coverage/
+*.cov
+
+# HTML/CSS specific
+*.css.map
+*.html.map
+
+# Ignore the following directories
+/target/
+/out/
+dist/
