@@ -27,6 +27,9 @@ func hellohandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "love you 3000 khushi!!")
 }
 func main() {
+	fileServer := http.FileServer(http.Dir("./frontend"))
+    http.Handle("/", fileServer)
+    http.HandleFunc("/form", formhandler)
 	http.HandleFunc("/hello", hellohandler)
 	fmt.Println("Server Started:")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
