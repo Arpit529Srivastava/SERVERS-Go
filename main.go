@@ -8,8 +8,9 @@ import (
 func hellohandler(w http.ResponseWriter, r *http.Request ){
 	if r.URL.Path!="/hello"{
 		http.Error(w,"status not found", http.StatusNotFound)
+		return
 	}
-	return
+	
 }
 func main() {
 	fmt.Println("Server Started:")
