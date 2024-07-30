@@ -26,7 +26,7 @@ func hellohandler(w http.ResponseWriter,r *http.Request){
 	if r.Method!="GET"{
 		http.Error(w,"working with wrong method", http.StatusNotFound)
 	}
-	fmt.Fprintf(w,"love you khushi")
+	fmt.Fprintf(w,"WELCOME TO MY SERVER!!!")
 }
 func main(){
 	fileServer:= http.FileServer(http.Dir("./frontend"))
