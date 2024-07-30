@@ -29,7 +29,7 @@ func hellohandler(w http.ResponseWriter,r *http.Request){
 	fmt.Fprintf(w,"love you khushi")
 }
 func main(){
-	fileServer:= http.FileServer(http.Dir("./static"))
+	fileServer:= http.FileServer(http.Dir("./frontend"))
 	//handling the root route
 	http.Handle("/",fileServer)
 	http.HandleFunc("/signin", formhandler)
